@@ -20,7 +20,6 @@ if __name__ == '__main__':
 # con eso pondremos el server en modo prueba y cualquier actualizacion se montara de una , 
 # Cada vez que modifiquemos algo , el servidor se va a reiniciar
 
-#Prueba commit
 
 
 
