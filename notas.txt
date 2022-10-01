@@ -4,6 +4,5 @@ O ctrl + s para guardar cambios en visual studio y luego reiniciamos el servidor
 
 con Ctrl+p , luego escribimos >format y le colocamos formato al documento , no lo organiza mejor 
 
-Holaaaaa
 
-Exoticas.com
+

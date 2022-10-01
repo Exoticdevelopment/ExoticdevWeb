@@ -1,5 +1,0 @@
-Si no notamos los cambios en la pagina web , podemos utilizar ctrl + shift +R para borrar cache
-
-O ctrl + s para guardar cambios en visual studio y luego reiniciamos el servidor desde CMD
-
-con Ctrl+p , luego escribimos >format y le colocamos formato al documento , no lo organiza mejor 
