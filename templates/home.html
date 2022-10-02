@@ -5,24 +5,80 @@
 <!--===================SLIDER DE IMAGENES==========================-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000"><!--El data es para colocar el tiempo en el cual van a ir cambiando de imagen la page-->
-        <img src="{{ url_for('static', filename='CSS/DFX/medico1.jpg') }}" class="d-block w-100" alt="slide1">
-      </div>
-      <div class="carousel-item"data-bs-interval="3000">
-        <img src="{{ url_for( 'static',filename='CSS/DFX/prueba2.jpg') }}" class="d-block w-100" alt="slide2">
-      </div>
-      <div class="carousel-item"data-bs-interval="3000">
-        <img src="{{ url_for('static', filename='CSS/DFX/prueba.jpg') }}" class="d-block w-100" alt="slide3">
-      </div>
+        <div class="carousel-item active" data-bs-interval="3000">
+            <!--El data es para colocar el tiempo en el cual van a ir cambiando de imagen la page-->
+            <img src="{{ url_for('static', filename='CSS/DFX/medico1.jpg') }}" class="d-block w-100" alt="slide1">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="{{ url_for( 'static',filename='CSS/DFX/prueba2.jpg') }}" class="d-block w-100" alt="slide2">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="{{ url_for('static', filename='CSS/DFX/prueba.jpg') }}" class="d-block w-100" alt="slide3">
+        </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
+<!--===================INTRO==========================-->
+<section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">La salud es la mayor posesión. La alegría es el mayor tesoro. La confianza
+        es el <span class="text-primary">mayor amigo<span /></h1>
+    <p class="p-3  fs-4">
+        <span class="text-primary"></span> Garantizar una vida sana y promover el bienestar en todas las edades
+        eso dejanolo a nosotros!
+    </p>
+</section>
+<!--===================SERVICIOS==========================-->
+<section class="w-100">
+    <div class="row w-75 mx-auto" id="servicios-fila-1">       
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+            <img src="{{ url_for('static', filename='CSS/DFX/embarazo.png') }}" alt="desarrollo"   width="180" height="160">
 
-{% endblock %}
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Salud materna</h3>
+                <p class="px-4">Para nosotros es un placer ser parte de tu maternidad ,Cada 
+                    etapa debería ser una experiencia positiva que asegurara el pleno potencial de salud y bienestar de las mujeres y sus bebés</p>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+            <img src="{{ url_for('static', filename='CSS/DFX/joven.png') }}" alt="concepto" width="180" height="160">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Salud infantil</h3>
+                <p class="px-4">Es un placer para nosotros ser parte del bienestar de nuestros pequeñines , recuerda hacerles los chequeos pertinentes
+                    Estas visitas son una oportunidad para revisar el desarrollo de su hijo. También es un buen momento para detectar o prevenir problemas. </p>
+            </div>
+        </div>   
+    </div>
+    
+    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+            <img src="{{ url_for('static', filename='CSS/DFX/vih.png') }}" alt="comunicaciones" width="180" height="160">
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">VIH/SIDA</h3>
+                <p class="px-4">Dejanos ser tu respaldo! para nosotros es un placer hacer parte de tu proceso medico , 
+                    recuerda que no existe cura para el VIH o el SIDA. Sin embargo, existen medicamentos que pueden ayudar a disminuir los síntomas, evitar que el virus se contagie a un bebé no nacido y ayudar a evitar infecciones adicionales en las personas con el VIH.</p>
+            </div>
+        </div>
+    
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+            <img src="{{ url_for('static', filename='CSS/DFX/saluddental.png') }}" alt="seo" width="180" height="160" >
+
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Salud dental</h3>
+                <p class="px-4">Recuerda cuan es importante que el cuidado de la boca y los dientes comience en la infancia. Si no es así,
+                     puede tener problemas con los dientes y encías, como caries o la pérdida de los dientes. Somos tu mejor aliado en el cuidado y prevencion </p>
+            </div>
+        </div>   
+</section>
+
+{% endblock %}  
