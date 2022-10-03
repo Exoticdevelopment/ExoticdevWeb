@@ -1,7 +1,22 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Prueba</h1>
+<!--===================INICIO==========================-->
+<section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Aprende un poco de nuestra <span class="text-primary">APP<span /></h1>
+    <p class="p-3  fs-4">
+        <span class="text-primary">La mejor app</span> para tu bienestar y salud!
+    </p>
+</section>
+
+
+<!--===================CARUSEL==========================-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='CSS/DFX/app.png') }}" class="d-block w-100" alt="slide1">
+      </div>
+    </div>
 
 
 {% endblock %}
