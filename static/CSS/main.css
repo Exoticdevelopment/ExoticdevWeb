@@ -55,8 +55,11 @@ body {
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 
 @media (max-width:768px){
-    #intro {
+    #intro, #equipo {
         width:90% !important;   
+    }
+    #equipo p{
+        display:none;
     }
     .servicio-fila-1{
         width: 100% !important;
