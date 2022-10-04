@@ -13,10 +13,92 @@
 <!--===================CARUSEL==========================-->
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{{ url_for('static', filename='CSS/DFX/app.png') }}" class="d-block w-100" alt="slide1">
-      </div>
+        <div class="carousel-item active">
+            <img src="{{ url_for('static', filename='CSS/DFX/app.png') }}" class="d-block w-100" alt="slide1">
+        </div>
     </div>
 
+    <!--===================APP STORE- PLAY STORE ==========================-->
 
-{% endblock %}
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+        id="intro">
+        <p class="p-3  fs-4">
+            <span class="text-primary"></span> Recuerda que puedes encontrar nuestra app totalmente gratis en
+        </p>
+    </section>
+
+    <div class="mx-auto" style="width: 500px;">
+        <img src="{{ url_for('static', filename='CSS/DFX/playstoreappstore.png') }}" class="d-block w-100" alt="slide1">
+    </div>
+
+    <!--===================APP STORE- PLAY STORE ==========================-->
+
+    <!--===================UNION==========================-->
+
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+        id="intro">
+        <h3 class="fs-5 mt-4 px-4 pb-1">Somos la union entre la tecnologia y la salud , nuestra app esta diseñada para 
+            ayudarte las 24/7 , donde encontraras todo tipo de especialista para acudir en cualquier urgencia medica 
+        </h3>
+    </section>
+
+
+
+
+    <section class="w-100">
+        <div class="row w-75 mx-auto" id="servicios-fila-1">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="{{ url_for('static', filename='CSS/DFX/app1.png') }}" alt="" width="180" height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Consulta general</h3>
+                    <p class="px-4">Para nosotros es un placer ser parte de tu maternidad ,Cada
+                        etapa debería ser una experiencia positiva que asegurara el pleno potencial de salud y bienestar
+                        de las mujeres y sus bebés</p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                <img src="{{ url_for('static', filename='CSS/DFX/app2.png') }}" alt="concepto" width="180"
+                    height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Especialista</h3>
+                    <p class="px-4">Es un placer para nosotros ser parte del bienestar de nuestros pequeñines , recuerda
+                        hacerles los chequeos pertinentes
+                        Estas visitas son una oportunidad para revisar el desarrollo de su hijo. También es un buen
+                        momento para detectar o prevenir problemas. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                <img src="{{ url_for('static', filename='CSS/DFX/app3.png') }}" alt="comunicaciones" width="180"
+                    height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Dentistas</h3>
+                    <p class="px-4">Dejanos ser tu respaldo! para nosotros es un placer hacer parte de tu proceso medico
+                        ,
+                        recuerda que no existe cura para el VIH o el SIDA. Sin embargo, existen medicamentos que pueden
+                        ayudar a disminuir los síntomas, evitar que el virus se contagie a un bebé no nacido y ayudar a
+                        evitar infecciones adicionales en las personas con el VIH.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="{{ url_for('static', filename='CSS/DFX/app4.png') }}" alt="seo" width="180"
+                    height="160">
+
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Call center</h3>
+                    <p class="px-4">Recuerda cuan es importante que el cuidado de la boca y los dientes comience en la
+                        infancia. Si no es así,
+                        puede tener problemas con los dientes y encías, como caries o la pérdida de los dientes. Somos
+                        tu mejor aliado en el cuidado y prevencion </p>
+                </div>
+            </div>
+    </section>
+    {% endblock %}
